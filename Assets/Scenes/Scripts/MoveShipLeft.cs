@@ -14,13 +14,18 @@ public class MoveShipLeft : MonoBehaviour
     {
         speed = Random.Range(10, 30);
         rb2.velocity = transform.right * speed;
+        Destroy(gameObject, 5);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(Explosion, transform.position, transform.rotation);
+        if (collision.CompareTag("Bullet"))
+        {
+            Instantiate(Explosion, transform.position, transform.rotation);
 
-        Destroy(Explosion, 2);
-        Destroy(gameObject);
+            Destroy(Explosion.gameObject);
+            Destroy(gameObject);
+        }
+
     }
 }

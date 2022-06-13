@@ -11,6 +11,8 @@ public class SpawnShips : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawnTime = Random.Range(2, 5);
+
         InvokeRepeating("SpawnShip", spawnTime, spawnTime);
     }
 
