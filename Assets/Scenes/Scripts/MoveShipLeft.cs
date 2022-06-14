@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class MoveShipLeft : MonoBehaviour
 {
-    float speed;
+    public float speed;
     public Rigidbody2D rb2;
 
     public GameObject Explosion;
+    public bool laserShip;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = Random.Range(10, 30);
+        if(laserShip == false)
+        {
+            speed = Random.Range(10, 30);
+        }
         rb2.velocity = transform.right * speed;
         Destroy(gameObject, 5);
     }

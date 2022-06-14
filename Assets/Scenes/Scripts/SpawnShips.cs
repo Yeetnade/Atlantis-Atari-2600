@@ -8,10 +8,14 @@ public class SpawnShips : MonoBehaviour
     public float spawnTime;
 
     public GameObject[] Ships;
+    public bool LaserSpawner;
     // Start is called before the first frame update
     void Start()
     {
-        spawnTime = Random.Range(2, 5);
+        if(LaserSpawner == false)
+        {
+            spawnTime = Random.Range(2, 5);
+        }
 
         InvokeRepeating("SpawnShip", spawnTime, spawnTime);
     }

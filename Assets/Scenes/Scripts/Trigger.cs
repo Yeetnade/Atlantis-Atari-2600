@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    public GameObject spawnPointRight;
-    public GameObject spawnPointLeft;
+    public GameObject Explosion;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        spawnPointLeft.SetActive(false);
-        spawnPointRight.SetActive(false);
+        if(collision.CompareTag("City"))
+        {
+            Instantiate(Explosion, transform.position, transform.rotation);
 
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        spawnPointLeft.SetActive(true);
-        spawnPointRight.SetActive(true);
+            Destroy(Explosion.gameObject);
+            Destroy(gameObject);
+        }
     }
 }
