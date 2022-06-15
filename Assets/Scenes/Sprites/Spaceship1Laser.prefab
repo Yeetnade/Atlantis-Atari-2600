@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 5080342824490184167}
   m_Layer: 0
   m_Name: Spaceship1Laser
-  m_TagString: Ships
+  m_TagString: Ship1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1178686767625730623}
   m_Layer: 0
   m_Name: Spaceship2 Flipped
-  m_TagString: Ships
+  m_TagString: Ship3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,6 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468b490d48f35894e814e2820640799f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
   rb2: {fileID: -3882707465306751145}
   Explosion: {fileID: 3306647537795131540, guid: 42f0cc04f92ec7d4895231b3b4031f19,
     type: 3}
+  laserShip: 0

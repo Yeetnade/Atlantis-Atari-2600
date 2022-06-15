@@ -18,5 +18,18 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
+
+        if(collision.gameObject.tag == "Ship1")
+        {
+            ScoreManager.sManager.IncreaseScore(100);
+        }
+        else if (collision.gameObject.tag == "Ship2")
+        {
+            ScoreManager.sManager.IncreaseScore(200);
+        }
+        else if (collision.gameObject.tag == "Ship3")
+        {
+            ScoreManager.sManager.IncreaseScore(1000);
+        }
     }
 }

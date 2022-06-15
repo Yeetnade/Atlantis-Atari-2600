@@ -5,8 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
-  - Ships
   - City
+  - Ship1
+  - Ship2
+  - Ship3
   layers:
   - Default
   - TransparentFX

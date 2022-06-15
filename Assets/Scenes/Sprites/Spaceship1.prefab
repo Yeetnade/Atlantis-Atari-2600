@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5572931978275864538}
   m_Layer: 0
   m_Name: Spaceship1
-  m_TagString: Ships
+  m_TagString: Ship1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36f5bba18ff44f4687ef8173e2ff71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
   rb2: {fileID: 3333288382942835471}
   Explosion: {fileID: 6292577423908266943, guid: e658d943f5be0aa4ba87b4af5e763309,
     type: 3}
+  laserShip: 0

@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 3695208516028046128}
   m_Layer: 0
   m_Name: Spaceship3LaserFlipped
-  m_TagString: Ships
+  m_TagString: Ship2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
