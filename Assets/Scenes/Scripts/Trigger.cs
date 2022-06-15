@@ -5,14 +5,12 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     public GameObject Explosion;
+    public Transform explosionLocation;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("City"))
-        {
-            Instantiate(Explosion, transform.position, transform.rotation);
+        Instantiate(Explosion, explosionLocation.position, transform.rotation);
 
-            Destroy(Explosion.gameObject);
-            Destroy(gameObject);
-        }
+        Destroy(Explosion.gameObject);
+        Destroy(gameObject);
     }
 }

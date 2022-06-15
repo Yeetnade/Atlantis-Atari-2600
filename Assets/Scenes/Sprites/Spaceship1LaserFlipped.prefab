@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5469521022753294206}
   - component: {fileID: 3804231787317168437}
   - component: {fileID: 2836910083592793615}
-  - component: {fileID: 744610643696593375}
   m_Layer: 0
   m_Name: LaserBelow
   m_TagString: Untagged
@@ -109,18 +108,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &744610643696593375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2202883125936604924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3296969581484298295
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +119,6 @@ GameObject:
   - component: {fileID: 6236078398301376982}
   - component: {fileID: 8180164907569413530}
   - component: {fileID: 6510710036985873708}
-  - component: {fileID: 8010415810243352380}
   m_Layer: 0
   m_Name: LaserAbove
   m_TagString: Untagged
@@ -230,18 +216,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8010415810243352380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3296969581484298295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9174589218367134941
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +230,7 @@ GameObject:
   - component: {fileID: 8720810711038026882}
   - component: {fileID: 7149671501918828083}
   - component: {fileID: 7916861491086850993}
+  - component: {fileID: 5660279203074921938}
   m_Layer: 0
   m_Name: Spaceship1LaserFlipped
   m_TagString: Ships
@@ -412,3 +387,17 @@ MonoBehaviour:
   Explosion: {fileID: 6292577423908266943, guid: e658d943f5be0aa4ba87b4af5e763309,
     type: 3}
   laserShip: 1
+--- !u!114 &5660279203074921938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174589218367134941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserAbove: {fileID: 3296969581484298295}
+  laserBelow: {fileID: 2202883125936604924}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1211404078606042116}
   - component: {fileID: 8346718530211032944}
   - component: {fileID: 4551589853805112832}
+  - component: {fileID: 7538085774187211507}
   m_Layer: 0
   m_Name: Spaceship2Laser
   m_TagString: Ships
@@ -150,6 +151,20 @@ MonoBehaviour:
   Explosion: {fileID: 3306647537795131540, guid: 42f0cc04f92ec7d4895231b3b4031f19,
     type: 3}
   laserShip: 1
+--- !u!114 &7538085774187211507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824547419364060802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserAbove: {fileID: 2943454254167056381}
+  laserBelow: {fileID: 6906082569950277844}
 --- !u!1 &2943454254167056381
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,8 +175,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2342263792535734989}
   - component: {fileID: 1036389124599814892}
-  - component: {fileID: 5521020679055269415}
   - component: {fileID: 6470560815705696503}
+  - component: {fileID: 5521020679055269415}
   m_Layer: 0
   m_Name: LaserAbove
   m_TagString: Untagged
@@ -233,6 +248,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6470560815705696503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2943454254167056381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserAbove: {fileID: 0}
+  laserBelow: {fileID: 0}
 --- !u!61 &5521020679055269415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,18 +288,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6470560815705696503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2943454254167056381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6906082569950277844
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,8 +298,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7094313439291697188}
   - component: {fileID: 4601770280680399631}
-  - component: {fileID: 7558934526484130492}
   - component: {fileID: 6579621694623598164}
+  - component: {fileID: 7558934526484130492}
   m_Layer: 0
   m_Name: LaserBelow
   m_TagString: Untagged
@@ -354,6 +371,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6579621694623598164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6906082569950277844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserAbove: {fileID: 0}
+  laserBelow: {fileID: 0}
 --- !u!61 &7558934526484130492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -380,15 +411,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6579621694623598164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6906082569950277844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

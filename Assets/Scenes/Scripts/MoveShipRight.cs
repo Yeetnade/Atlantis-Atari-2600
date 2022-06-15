@@ -15,7 +15,6 @@ public class MoveShipRight : MonoBehaviour
         {
             speed = Random.Range(-10, -30);
         }
-
         rb2.velocity = transform.right * speed;
         Destroy(gameObject, 5);
     }

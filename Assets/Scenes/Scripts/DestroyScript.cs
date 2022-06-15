@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class DestroyScript : MonoBehaviour
 {
+    public GameObject laserAbove;
+    public GameObject laserBelow;
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        laserAbove.SetActive(false);
+        laserBelow.SetActive(false);
     }
 
 }

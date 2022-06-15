@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2548290607034229571}
   - component: {fileID: 4631702759968507959}
   - component: {fileID: 3223992637106115267}
+  - component: {fileID: 6336916815885621218}
   m_Layer: 0
   m_Name: Spaceship2LaserFlipped 1
   m_TagString: Ships
@@ -150,6 +151,20 @@ MonoBehaviour:
   Explosion: {fileID: 3306647537795131540, guid: 42f0cc04f92ec7d4895231b3b4031f19,
     type: 3}
   laserShip: 1
+--- !u!114 &6336916815885621218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486279895465609669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserAbove: {fileID: 1966909021705599162}
+  laserBelow: {fileID: 7801862763740895123}
 --- !u!1 &1966909021705599162
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +176,6 @@ GameObject:
   - component: {fileID: 1374717032219717002}
   - component: {fileID: 4464020730318765483}
   - component: {fileID: 1746051287268378973}
-  - component: {fileID: 2546333844103618237}
   m_Layer: 0
   m_Name: LaserAbove
   m_TagString: Untagged
@@ -259,18 +273,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2546333844103618237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966909021705599162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7801862763740895123
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +284,6 @@ GameObject:
   - component: {fileID: 5901559552880037731}
   - component: {fileID: 886743936496763976}
   - component: {fileID: 3860806231292131529}
-  - component: {fileID: 3299329027198825490}
   m_Layer: 0
   m_Name: LaserBelow
   m_TagString: Untagged
@@ -380,15 +381,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3299329027198825490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7801862763740895123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7942851516df4244ea86cf4b839c7669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
