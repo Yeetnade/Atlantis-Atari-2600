@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3498242560033700813}
   - component: {fileID: -3200365251894325063}
   - component: {fileID: -6959756463206002231}
+  - component: {fileID: -1071861124853316810}
   m_Layer: 0
   m_Name: Spaceship2
   m_TagString: Ship3
@@ -148,3 +149,15 @@ MonoBehaviour:
   Explosion: {fileID: 3306647537795131540, guid: 42f0cc04f92ec7d4895231b3b4031f19,
     type: 3}
   laserShip: 0
+--- !u!114 &-1071861124853316810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536291658858434891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c8bd687b8758b418d7210146b25b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

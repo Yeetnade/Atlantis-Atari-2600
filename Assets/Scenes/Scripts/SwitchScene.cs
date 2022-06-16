@@ -14,6 +14,13 @@ public class SwitchScene : MonoBehaviour
         if(buildings.Length == 0)
         {
             SceneManager.LoadScene(1);
+            StartCoroutine(Restart());
         }
+    }
+
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene(0);
     }
 }

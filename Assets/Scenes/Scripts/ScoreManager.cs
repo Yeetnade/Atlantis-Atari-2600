@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager sManager;
     public Text scoreText;
-    public int playerScore = 0;
+    public static int playerScore;
 
     void Start()
     {
